@@ -35,9 +35,15 @@ a {
 #banner h2 {
     color: #222;
     /* Duração ate aparecer o conteudo*/
-    transition-duration: 5s !important;
+    transition-duration: 3s !important;
 }
 
 .card {
-    transition-duration: 3s !important;
+    transition-duration: 2s !important;
+}
+
+.valores h2,
+p,
+.col-md-4 {
+    transition-duration: 2s !important;
 }
