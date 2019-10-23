@@ -18,7 +18,7 @@ a {
 }
 
 #banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../imagens/banner.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../img/banner.jpg');
     height: 100vh;
     background-size: 100%;
     background-size: cover;
