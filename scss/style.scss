@@ -1,0 +1,110 @@
+$animationTime: 1.5s;
+$animationRadius: 30px;
+$dotSize: 20px;
+body {
+    background: #f9f9f9;
+}
+
+.container {
+    margin-top: 250px;
+}
+
+.loader {
+    position: relative;
+    width: $animationRadius * 3 + $dotSize;
+    height: $dotSize;
+    margin: $animationRadius auto;
+}
+
+.dot {
+    display: inline-block;
+    width: $dotSize;
+    height: $dotSize;
+    border-radius: $dotSize * 0.5;
+    background: #ff7474;
+    position: absolute;
+    z-index: 1;
+}
+
+.shadow {
+    display: inline-block;
+    top: $dotSize * 1.7;
+    width: $dotSize;
+    height: $dotSize / 2.5;
+    border-radius: $dotSize * 0.5;
+    background: #ddd;
+    position: absolute;
+    z-index: 0;
+}
+
+.shadow_1 {
+    animation: animateShadow1 $animationTime cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+}
+
+.dot_1 {
+    animation: animateDot1 $animationTime cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+    left: $animationRadius;
+}
+
+.dot_2 {
+    animation: animateDot2 $animationTime cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+    animation-delay: $animationTime / 1.2;
+    left: $animationRadius * 2;
+}
+
+.dot_3 {
+    animation: animateDot3 $animationTime cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+    animation-delay: $animationTime / 1.4;
+    left: $animationRadius * 3;
+}
+
+@keyframes animateDot1 {
+    0% {
+        transform: translateY(0px) translateX(-$animationRadius);
+    }
+    50% {
+        transform: translateY(20px) translateX(-$animationRadius);
+    }
+    100% {
+        transform: translateY(0px) translateX(-$animationRadius);
+    }
+}
+
+@keyframes animateShadow1 {
+    0% {
+        transform: scaleX(0);
+        opacity: 0
+    }
+    50% {
+        transform: scaleX(1);
+        opacity: 1
+    }
+    100% {
+        transform: scaleX(0);
+        opacity: 0
+    }
+}
+
+@keyframes animateDot2 {
+    0% {
+        transform: translateY(0px) translateX(-$animationRadius);
+    }
+    50% {
+        transform: translateY(20px) translateX(-$animationRadius);
+    }
+    100% {
+        transform: translateY(0px) translateX(-$animationRadius);
+    }
+}
+
+@keyframes animateDot3 {
+    0% {
+        transform: translateY(0px) translateX(-$animationRadius);
+    }
+    50% {
+        transform: translateY(20px) translateX(-$animationRadius);
+    }
+    100% {
+        transform: translateY(0px) translateX(-$animationRadius);
+    }
+}

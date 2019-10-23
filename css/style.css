@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+:root {
+    --textoPrincipal: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--textoPrincipal);
+}
+
+p,
+a {
+    font-family: var(--textoPrincipal);
+}
+
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../imagens/banner.jpg');
+    height: 90vh;
+    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+}
+
+#banner .col-md-7 {
+    height: 90vh;
+    background: #fff;
+    clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+}
+
+#banner h2 {
+    color: #222;
+    /* Duração ate aparecer o conteudo*/
+    transition-duration: 5s !important;
+}
