@@ -19,15 +19,15 @@ a {
 
 #banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../imagens/banner.jpg');
-    height: 90vh;
+    height: 100vh;
     background-size: 100%;
     background-size: cover;
     background-attachment: fixed;
-    background-position: top center;
+    background-position: center center;
 }
 
-#banner .col-md-7 {
-    height: 90vh;
+#banner .col-md-6 {
+    height: 100vh;
     background: #fff;
     clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
 }
@@ -36,4 +36,8 @@ a {
     color: #222;
     /* Duração ate aparecer o conteudo*/
     transition-duration: 5s !important;
+}
+
+.card {
+    transition-duration: 3s !important;
 }
